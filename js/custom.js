@@ -56,13 +56,15 @@ jQuery(document).ready(function () {
     jQuery(window).scroll(function () {
         var windowScrollPosTop = jQuery(window).scrollTop();
 
-        if (windowScrollPosTop >= 150) {
+        if (windowScrollPosTop >= 60) {
             jQuery(".header").css({
                 "background": "#B193DD",
             });
             jQuery(".top-header img.logo").css({
-                "margin-top": "-40px",
-                "margin-bottom": "0"
+                "margin-top": "-15px",
+                "margin-bottom": "0" ,
+                "max-width":"70%",
+                //"position":"relative",
             });
             jQuery(".navbar-default").css({
                 "margin-top": "-15px",
@@ -72,8 +74,9 @@ jQuery(document).ready(function () {
                 "background": "transparent",
             });
             jQuery(".top-header img.logo").css({
-                "margin-top": "-15px",
-                "margin-bottom": "25px"
+                "margin-top": "0px",
+                "margin-bottom": "15px",
+                "max-width":"100%"
             });
             jQuery(".navbar-default").css({
                 "margin-top": "12px",

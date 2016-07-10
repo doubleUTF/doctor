@@ -49,8 +49,8 @@ h2 {
     margin: auto;
 }
 .top-header img.logo {
-    margin-bottom: 25px;
-    margin-top: -15px;
+    margin-bottom: 15px;
+    margin-top: 0px;
     transition: all .5s ease 0s;
     -webkit-transition: all .5s ease 0s;
     -moz-transition: all .5s ease 0s;
@@ -104,7 +104,26 @@ li a.active {
     margin-top: 4px;
 }
 
+/*front jumbotron*/
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(../img/waterfall.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    height: 300px;
+}
+.frontview-row{
+  margin: 0;
+  padding: 0;
+}
 /*slider area*/
+.frontview{
+  margin:0;
+  padding:0;
+}
 
 .slider-row {
     margin: 0;
@@ -188,6 +207,14 @@ li a.active {
     color: transparent;
     margin-right: 0;
     margin-top: 50px;
+}
+/*Anchor link offsets*/
+
+.anchor{
+  display: block;
+  height: 50px; /*same height as header*/
+  margin-top: -50px; /*same height as header*/
+  visibility: hidden;
 }
 
 /*about area*/

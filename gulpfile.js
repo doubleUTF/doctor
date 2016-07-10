@@ -12,5 +12,5 @@ gulp.task('serve', function(){
     }
   });
     gulp.watch(['./*.html','./img/*.*',
-  './css/*.*']).on('change',browserSync.reload);
+  './css/*.css','./js/*.js']).on('change',browserSync.reload);
 });
