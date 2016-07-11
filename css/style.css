@@ -104,7 +104,7 @@ li a.active {
     margin-top: 4px;
 }
 
-/*front jumbotron*/
+/* jumbotron*/
 .jumbotron {
     margin-bottom: 0px;
     background-image: url(../img/waterfall.jpg);
@@ -113,7 +113,7 @@ li a.active {
     background-repeat: no-repeat;
     color: white;
     text-shadow: black 0.3em 0.3em 0.3em;
-    height: 300px;
+    padding: 12%;
 }
 .frontview-row{
   margin: 0;
@@ -287,18 +287,26 @@ li a.active {
     -moz-transition: all .7s ease 0s;
     -o-transition: all .7s ease 0s;
     -ms-transition: all .7s ease 0s;
+    padding-top:10%;
 }
 .about-details h3 {
     font-size: 36px;
     color: #fff;
     margin-top: 0;
 }
-.about-details p {
+.about-details p{
     font-size: 13px;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     padding: 0 25px;
     padding-bottom: 30px;
+}
+.about-details li{
+    font-size: 13px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    list-style: disc; ;
 }
 .single-about-detail:hover .about-details {
     background: #6dbd35;
