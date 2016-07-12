@@ -233,6 +233,7 @@ li a.active {
     background: url(../img/pattern.jpg);
     background-repeat: repeat-y;
     margin-top: 40px;
+    padding-top:30px;
 }
 .service h2 {
     font-size: 90px;
@@ -281,7 +282,7 @@ li a.active {
 .service-img {
     width: 200px;
     height: 123px;
-    background: #6dbd35;
+    background: #2a2a2a;
     position: relative;
     top: 1px;
     left: 2px;
@@ -295,7 +296,7 @@ li a.active {
     height: 0;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-bottom: 40px solid #6dbd35;
+    border-bottom: 40px solid #2a2a2a;
 }
 .service-img:after {
     content: "";
@@ -306,7 +307,7 @@ li a.active {
     height: 0;
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
-    border-top: 40px solid #6dbd35;
+    border-top: 40px solid #2a2a2a;
     z-index: 999;
 }
 .single-service h3 {
@@ -314,20 +315,27 @@ li a.active {
     color: #fff;
     padding-bottom: 90px;
 }
-.service-img img.heart {
-    left: 20%;
-    top: 18%;
+.service-img img.muscle {
+    left: 17%;
+    top: 0%;
 }
-.service-img img.brain {
-    left: 26%;
-    top: 11%;
+.service-img img.back {
+    left: 18%;
+    top: 8%;
 }
-.service-img img.knee {
+.service-img img.joint {
     left: 38%;
 }
-.service-img img.bone {
-    left: 25%;
-    top: 14%;
+.service-img img.headache {
+    left: 18%;
+    top: -5%;
+}
+.service-img img.infertility{
+  left:18%;
+}
+.service-img img.digestive{
+  left:18%;
+  top:-4.75%;
 }
 .service-img img {
     position: absolute;
