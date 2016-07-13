@@ -97,7 +97,7 @@ ul.nav {
     background-color: #000;
 }
 li a.active {
-    color: #6dbd35 !important;
+    color: #639c31 !important;
 }
 .navbar-default .navbar-toggle {
     border-color: #fff;
@@ -133,8 +133,8 @@ li a.active {
 
 .about h2 {
     font-size: 90px;
-    color: #6dbd35;
-    margin-top: 50px;
+    color: #639c31;
+    margin-top: 30px;
 }
 .about h4 {
     font-size: 24px;
@@ -221,10 +221,10 @@ li a.active {
     list-style: disc; ;
 }
 .single-about-detail:hover .about-details {
-    background: #6dbd35;
+    background: #639c31;
 }
 .single-about-detail:hover .pentagon-text h1 {
-    color: #6dbd35;
+    color: #639c31;
 }
 .about-heading {
   padding-bottom: 5%;
@@ -432,6 +432,15 @@ li a.active {
     background: #2a2a2a;
 }
 
+/*insurance section*/
+.insurance h2{
+  color:#639c31;
+  padding-top: 20px;
+}
+.insurance h4 {
+    font-size: 24px;
+    color: #737373;
+}
 /*contact section*/
 
 .contact-caption {
@@ -803,4 +812,23 @@ responsive area
     .footer p {
         font-size: 10px;
     }
+}
+
+/* Modal area */
+.modal {
+  text-align: center;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; /* Adjusts for spacing */
+}
+
+.modal-dialog {
+  display:inline-block;
+  text-align: left;
+  vertical-align:middle;
 }
