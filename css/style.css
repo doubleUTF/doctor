@@ -10,9 +10,6 @@
 *Modified by: David Lau
 *
 *
-Changes:
-Text color from #42b3e5, #6dbd35,#3a9cc8 to #6dbd35
-
 ****/
 
 body {
@@ -226,7 +223,7 @@ li a.active {
 .single-faq-detail:hover .pentagon-text h1 {
     color: #639c31;
 }
-.faq-heading {
+.faq-heading, .about-heading {
   padding-bottom: 5%;
 }
 /*service and about us area*/
@@ -470,7 +467,6 @@ li a.active {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    border-bottom: 1px solid #13849c;
     padding-bottom: 12px;
     margin-bottom: 0;
 }
@@ -480,7 +476,6 @@ li a.active {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
-    border-bottom: 1px solid #13849c;
     padding-bottom: 12px;
     margin-bottom: 0;
 }
@@ -522,11 +517,11 @@ li a.active {
     margin-bottom: 12px;
 }
 .info-detail {
-    border-top: 1px solid #53cde5;
+    border-top: 1px solid #292929;
     padding-top: 15px;
 }
 .form {
-    border-top: 1px solid #53cde5;
+    border-top: 1px solid #292929;
     padding-top: 15px;
     text-align: right;
 }
@@ -590,9 +585,6 @@ li a.active {
 .footer a i.fa:hover {
     color: #6dbd35;
 }
-.carousel-inner {
-    position: relative;
-}
 
 /******************************
 responsive area
@@ -638,19 +630,7 @@ responsive area
         font-size: 16px;
         padding: 10px 8px;
     }
-    .carousel-caption h1 {
-        font-size: 90px;
-    }
-    .carousel-caption p {
-        font-size: 30px;
-    }
-    .carousel-caption button {
-        width: 180px;
-        height: 50px;
-        background: #6dbd35;
-        color: #fff;
-        font-size: 22px;
-    }
+
     h2 {
         font-size: 70px !important;
     }
@@ -678,20 +658,7 @@ responsive area
     .navbar-default .navbar-nav>li>a {
         font-size: 20px;
     }
-    .carousel-caption {
-        margin-top: -110px;
-    }
-    .carousel-caption h1 {
-        font-size: 75px;
-    }
-    .carousel-caption p {
-        font-size: 25px;
-    }
-    .carousel-caption button {
-        width: 160px;
-        height: 40px;
-        font-size: 20px;
-    }
+
     #map {
         height: 1120px;
     }
@@ -737,28 +704,7 @@ responsive area
     .header-backup {
         height: 80px;
     }
-    .carousel-caption {
-        margin-top: -60px;
-    }
-    .carousel-caption h1 {
-        font-size: 20px;
-    }
-    .carousel-caption p {
-        font-size: 12px;
-    }
-    .carousel-caption button {
-        width: 90px;
-        height: 23px;
-        font-size: 16px;
-    }
-    .carousel-control .glyphicon-chevron-right,
-    .carousel-control .icon-next {
-        margin-top: 30px;
-    }
-    .carousel-control .glyphicon-chevron-left,
-    .carousel-control .icon-prev {
-        margin-top: 30px;
-    }
+
     .about h2 {
         font-size: 50px;
         color: #6dbd35;
@@ -768,10 +714,7 @@ responsive area
         font-size: 50px;
         margin-top: 40px;
     }
-    .team h2 {
-        font-size: 50px;
-        margin-top: 40px;
-    }
+
     h4 {
         font-size: 18px !important;
     }
