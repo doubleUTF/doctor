@@ -437,9 +437,13 @@ li a.active {
   color:#639c31;
   padding-top: 20px;
 }
+
 .insurance h4 {
-    font-size: 24px;
-    color: #737373;
+  font-size: 24px;
+  color: #737373;
+}
+
+.insurance-img{
 }
 /*contact section*/
 
