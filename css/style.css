@@ -124,27 +124,27 @@ li a.active {
 
 .anchor{
   display: block;
-  height: 50px; /*same height as header*/
-  margin-top: -50px; /*same height as header*/
+  height: 75px; /*same height as header*/
+  margin-top: -75px; /*same height as header*/
   visibility: hidden;
 }
 
-/*about area*/
+/*faq and about area*/
 
-.about h2 {
+.faq h2, .about h2 {
     font-size: 90px;
     color: #639c31;
     margin-top: 30px;
 }
-.about h4 {
+.faq h4, .about h4 {
     font-size: 24px;
     color: #737373;
     margin-bottom: 45px;
 }
-.about-img img {
+.faq-img img {
     width: 100%;
 }
-.single-about-detail {
+.single-faq-detail {
     position: relative;
 }
 .pentagon-text h1 {
@@ -191,7 +191,7 @@ li a.active {
     border-right: 34px solid transparent;
     border-top: 15px solid #fff;
 }
-.about-details {
+.faq-details{
     background: #2a2a2a;
     border-top: 2px solid #fff;
     transition: all .7s ease 0s;
@@ -201,46 +201,46 @@ li a.active {
     -ms-transition: all .7s ease 0s;
     padding-top:10%;
 }
-.about-details h3 {
+.faq-details h3 {
     font-size: 36px;
     color: #fff;
     margin-top: 0;
 }
-.about-details p{
+.faq-details p{
     font-size: 13px;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     padding: 0 25px;
     padding-bottom: 30px;
 }
-.about-details li{
+.faq-details li{
     font-size: 13px;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     text-align: left;
     list-style: disc; ;
 }
-.single-about-detail:hover .about-details {
+.single-faq-detail:hover .faq-details {
     background: #639c31;
 }
-.single-about-detail:hover .pentagon-text h1 {
+.single-faq-detail:hover .pentagon-text h1 {
     color: #639c31;
 }
-.about-heading {
+.faq-heading {
   padding-bottom: 5%;
 }
-/*service area*/
+/*service and about us area*/
 
 .service {
     background: url(../img/pattern.jpg);
     background-repeat: repeat-y;
-    margin-top: 40px;
-    padding-top:30px;
+    margin-top: 20px;
+    padding-top:20px;
 }
 .service h2 {
     font-size: 90px;
     color: #fff;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-bottom: 0;
 }
 .service h4 {
@@ -315,7 +315,7 @@ li a.active {
 .single-service h3 {
     margin-top: 60px;
     color: #fff;
-    padding-bottom: 90px;
+    padding-bottom: 50px;
 }
 .service-img img.muscle {
     left: 17%;
@@ -368,14 +368,14 @@ li a.active {
     width: 100%;
 }
 .person-detail {
-    padding: 10px;
-    background: #639c31;
-    position: relative;
-    transition: all .7s ease 0s;
-    -webkit-transition: all .7s ease 0s;
-    -moz-transition: all .7s ease 0s;
-    -o-transition: all .7s ease 0s;
-    -ms-transition: all .7s ease 0s;
+  background-color: #639c31;
+  border-top: 2px solid #fff;
+  transition: all .7s ease 0s;
+  -webkit-transition: all .7s ease 0s;
+  -moz-transition: all .7s ease 0s;
+  -o-transition: all .7s ease 0s;
+  -ms-transition: all .7s ease 0s;
+  padding-top:0%;
 }
 .arrow-top {
     position: absolute;
@@ -421,6 +421,8 @@ li a.active {
     font-size: 13px;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
+    padding: 0 20px;
+    padding-bottom: 15px;
 }
 .single-member:hover .person-detail {
     background: #2a2a2a;
@@ -433,7 +435,12 @@ li a.active {
 }
 
 /*insurance section*/
+
+.insurance {
+  padding-bottom: 20px;
+}
 .insurance h2{
+  font-size: 90px;
   color:#639c31;
   padding-top: 20px;
 }
