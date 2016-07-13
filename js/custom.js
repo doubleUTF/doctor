@@ -86,7 +86,8 @@ jQuery(document).ready(function () {
         }
     });
 
-
-
-
+    // Modal js
+    $('#insuranceModal').on('shown.bs.modal', function(){
+      $('#insuranceModal').focus();
+    });
 });
