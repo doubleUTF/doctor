@@ -13,7 +13,8 @@ jQuery(document).ready(function () {
     var map2 = new GMaps({
       el:'#location-map',
       lat: 37.553830,
-      lng:-122.255962
+      lng:-122.255962,
+      zoom:14,
     });
 
     var contentString='<div id="content" style="max-width:250px">'+
@@ -37,7 +38,19 @@ jQuery(document).ready(function () {
         content:contentString
       }
     });
+    map2.setCenter({
+      lat:37.558797,
+      lng:-122.271068
+    });
 
+    map2.drawRoute({
+      origin:[37.563834, -122.273235],
+      destination:[37.553282,-122.256321],
+      travelMode:'driving',
+      strokeColor:'#3ec43b',
+      strokeOpacity:'0.6',
+      strokeWeight:6
+    });
 
     //this code is for smooth scroll and nav selector
     $(document).ready(function () {
