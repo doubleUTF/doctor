@@ -6,8 +6,36 @@ jQuery(document).ready(function () {
     //this code is for the gmap
     var map = new GMaps({
         el: '#map',
-        lat: -12.043333,
-        lng: -77.028333
+        lat: 37.556164,
+        lng: -122.272032
+    });
+
+    var map2 = new GMaps({
+      el:'#location-map',
+      lat: 37.553830,
+      lng:-122.255962
+    });
+
+    var contentString='<div id="content" style="max-width:250px">'+
+            '<h5 style="text-align:left">Aculau Acupuncture</h5>'+
+            '<div>'+
+            '<p style="text-align:left"><b>Address</b>: 1098 Foster City Blvd. Ste 301, ' +
+            'Foster City, CA 94404</p>'+
+            '</div>'+
+            '<div>'+
+            '<p style="text-align:left"><b>Directions</b>: Take 92 and exit off Foster City Blvd. We are '+
+            'located to the left of the 99 Ranch/Marlin Cove Marketplace. '+
+            'Enter the lobby and take the elevator to the third floor. '+
+            'Parking is free and available.</p>'
+            '</div>';
+
+    map2.addMarker({
+      lat:37.553282,
+      lng:-122.256321,
+      title: 'Aculau Acupuncture',
+      infoWindow:{
+        content:contentString
+      }
     });
 
 
