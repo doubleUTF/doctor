@@ -128,7 +128,7 @@ li a.active {
 
 /*faq and about area*/
 
-.faq h2, .about h2 {
+.faq h2, .about h2{
     font-size: 90px;
     color: #639c31;
     margin-top: 30px;
@@ -498,25 +498,7 @@ li a.active {
 .contact-info ul li span {
     font-weight: bold;
 }
-.contact-form input {
-    width: 100%;
-    height: 40px;
-    background: #fff;
-    font-size: 13px;
-    color: #084a5c;
-    font-family: 'Open Sans', sans-serif;
-    padding: 12px;
-    border: 0;
-    margin-bottom: 12px;
-}
-.contact-form textarea {
-    font-family: 'Open Sans', sans-serif;
-    padding: 12px;
-    width: 100%;
-    height: 140px;
-    border: 0;
-    margin-bottom: 12px;
-}
+
 .info-detail {
     border-top: 1px solid #292929;
     padding-top: 15px;
@@ -699,7 +681,7 @@ responsive area
         height: 80px;
     }
 
-    .about h2 {
+    .about h2, .faq h2, .insurance h2 {
         font-size: 50px;
         color: #6dbd35;
         margin-top: 30px;
@@ -708,7 +690,6 @@ responsive area
         font-size: 50px;
         margin-top: 40px;
     }
-
     h4 {
         font-size: 18px !important;
     }
@@ -736,7 +717,7 @@ responsive area
         margin-left: 8px;
     }
     .contact-info ul li {
-        font-size: 10px;
+        font-size: 13px;
     }
     .contact-info i.fa {
         font-size: 13px;
