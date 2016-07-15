@@ -503,11 +503,13 @@ li a.active {
     border-top: 1px solid #292929;
     padding-top: 15px;
 }
+
 .location-map {
+    margin-right:15px;
     border-top: 1px solid #292929;
     padding-top: 15px;
     text-align: right;
-    margin-right:20px;
+    padding-left:15px;
 }
 
 /*gmap*/
@@ -536,7 +538,8 @@ li a.active {
 
 #location-map {
   height:370px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-right:10px;
 }
 
 /*footer*/

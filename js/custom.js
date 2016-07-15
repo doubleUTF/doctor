@@ -27,7 +27,7 @@ jQuery(document).ready(function () {
             '<p style="text-align:left"><b>Directions</b>: Take 92 and exit off Foster City Blvd. We are '+
             'located to the left of the 99 Ranch/Marlin Cove Marketplace. '+
             'Enter the lobby and take the elevator to the third floor. '+
-            'Parking is free and available.</p>'
+            'Parking is free and available.</p>'+
             '</div>';
 
     map2.addMarker({
@@ -63,7 +63,7 @@ jQuery(document).ready(function () {
 
             $('a').each(function () {
                 $(this).removeClass('active');
-            })
+            });
             $(this).addClass('active');
 
             var target = this.hash,
@@ -131,4 +131,11 @@ jQuery(document).ready(function () {
     $('#insuranceModal').on('shown.bs.modal', function(){
       $('#insuranceModal').focus();
     });
+});
+
+    // Collapse navbar after clicking link
+    $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+        $(this).collapse('hide');
+    }
 });
