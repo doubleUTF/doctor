@@ -33,7 +33,7 @@ jspm_packages
 
 # Distribution folder
 dist
-joomla_dist.zip
+dist.zip
 
 # Optional npm cache directory
 .npm
