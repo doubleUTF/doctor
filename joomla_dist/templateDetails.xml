@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<install version="1.5" type="template">
+	<name>Aculau Acupuncture</name>
+	<creationDate>7/15/2016</creationDate>
+	<author>David Lau</author>
+	<authorEmail>aculau@gmail.com</authorEmail>
+	<authorUrl>http://www.aculau.com</authorUrl>
+	<copyright>Aculau 2016</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>Aculau Template</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>img</folder>
+		<folder>css</folder>
+    <folder>js</folder>
+    <folder>fonts</folder>
+	</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+	</positions>
+</install>
