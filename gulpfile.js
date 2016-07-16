@@ -21,7 +21,9 @@ gulp.task('jshint', function(){
 });
 
 // Default task
-gulp.task('default',['serve']);
+gulp.task('default',['clean'], function(){
+  gulp.start('usemin','imagemin','copyfonts','serve');
+});
 
 // Delete task- configured to delete dist folder
 gulp.task('clean',function(){
@@ -29,7 +31,7 @@ gulp.task('clean',function(){
 });
 
 // Usemin task to minify js,css,html and add revision to files
-gulp.task('usemin',['clean','jshint','imagemin'], function(){
+gulp.task('usemin',['clean','jshint'], function(){
   return gulp.src('./*html')
   .pipe(usemin({
     css: [minifyCss(),rev()],
@@ -37,6 +39,12 @@ gulp.task('usemin',['clean','jshint','imagemin'], function(){
     js: [uglify(),rev()]
   }))
   .pipe(gulp.dest('dist/'));
+});
+
+// Copy fonts
+gulp.task('copyfonts', ['clean'], function() {
+   gulp.src('./fonts/**/*.{ttf,woff,eot,svg}*')
+   .pipe(gulp.dest('./dist/fonts'));
 });
 
 // Images
@@ -51,9 +59,8 @@ gulp.task('imagemin', function() {
 gulp.task('serve', function(){
   browserSync.init({
     server:{
-      baseDir:'./'
+      baseDir:"dist"
     }
   });
-    gulp.watch(['./*.html','./img/*.*',
-  './css/*.css','./js/*.js']).on('change',browserSync.reload);
+    gulp.watch(['dist/**']).on('change',browserSync.reload);
 });
