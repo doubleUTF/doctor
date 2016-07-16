@@ -1,0 +1,6 @@
+1. Replace all image occurrences of "../img" with
+"<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/img"
+
+2. Replace js and css srcs with "<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/"
+
+minus the quotes ""
