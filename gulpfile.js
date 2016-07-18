@@ -21,8 +21,8 @@ gulp.task('jshint', function(){
 });
 
 // Default task
-gulp.task('default',['clean'], function(){
-  gulp.start('usemin','imagemin','copyfonts','serve');
+gulp.task('default', ['clean'],function(){
+  gulp.start('jshint','usemin','imagemin','copyfonts');
 });
 
 // Delete task- configured to delete dist folder
@@ -31,8 +31,8 @@ gulp.task('clean',function(){
 });
 
 // Usemin task to minify js,css,html and add revision to files
-gulp.task('usemin',['clean','jshint'], function(){
-  return gulp.src('./*html')
+gulp.task('usemin', function(){
+  return gulp.src('./*.html')
   .pipe(usemin({
     css: [minifyCss(),rev()],
     html: [minifyHtml({empty:true})],
@@ -43,24 +43,37 @@ gulp.task('usemin',['clean','jshint'], function(){
 
 // Copy fonts
 gulp.task('copyfonts', ['clean'], function() {
-   gulp.src('./fonts/**/*.{ttf,woff,eot,svg}*')
+   return gulp.src('./fonts/**/*.{ttf,woff,eot,svg}*')
    .pipe(gulp.dest('./dist/fonts'));
 });
 
 // Images
 gulp.task('imagemin', function() {
-     return del(['dist/img']), gulp.src('img/**')
+     return del(['dist/img']), gulp.src('./img/**/*')
     .pipe(cache(imageMin({ optimizationLevel: 3, progressive: true, interlaced: true })))
     .pipe(gulp.dest('dist/img'))
     .pipe(notify({ message: 'Images task complete' }));
 });
 
+// Watch files
+gulp.task('serve', ['browser-sync'], function(){
+
+  // Watch js, css, and html files
+  gulp.watch(['js/*.js','css/*.css','*.html'],['usemin']);
+
+  // Watch image files
+  gulp.watch('./img/**/*',['imagemin']);
+
+});
+
 // Browsersync Watch html files
-gulp.task('serve', function(){
+gulp.task('browser-sync',['default'], function(){
+
   browserSync.init({
     server:{
-      baseDir:"dist"
+      baseDir:"./"
     }
   });
-    gulp.watch(['dist/**']).on('change',browserSync.reload);
-});
+
+    gulp.watch(['js/*.js','css/*.css','img/**','*.html']).on('change', browserSync.reload);
+  });

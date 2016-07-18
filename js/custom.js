@@ -39,8 +39,8 @@ jQuery(document).ready(function () {
       }
     });
     map2.setCenter({
-      lat:37.558797,
-      lng:-122.271068
+      lat:37.557826,
+      lng:-122.265209
     });
 
     map2.drawRoute({
