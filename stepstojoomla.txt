@@ -1,6 +1,12 @@
 1. Replace all image occurrences of "../img" with
 "<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/img"
 
-2. Replace js and css srcs with "<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/"
+2. Concatenate the following string to js and css src: "<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/"
 
 minus the quotes ""
+
+3. Inlude the following at the very top, before head:
+
+<?php defined( '_JEXEC' ) or die( 'Restricted access' );?>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+   xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >

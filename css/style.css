@@ -14,7 +14,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding-top: 0px;
     font-family: 'BenchNine', sans-serif;
 }
 li {
@@ -35,7 +35,7 @@ h2 {
 
 .top-header {
     background: #fff !important;
-    position: fixed;
+    position: static;
     width: 100%;
     z-index: 99999;
 }
@@ -564,7 +564,9 @@ li a.active {
 .footer a i.fa:hover {
     color: #6dbd35;
 }
-
+.navbar-center{
+  padding-top:1.5%;
+}
 /******************************
 responsive area
 ********************************/
@@ -580,17 +582,7 @@ responsive area
         font-size: 20px;
         padding: 14px 12px;
     }
-    .carousel-caption h1 {
-        font-size: 120px;
-    }
-    .carousel-caption p {
-        font-size: 32px;
-    }
-    .carousel-caption button {
-        width: 215px;
-        height: 55px;
-        font-size: 26px;
-    }
+
     h2 {
         font-size: 75px !important;
     }

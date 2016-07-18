@@ -94,6 +94,7 @@ jQuery(document).ready(function () {
 
 
     //this code is for animation nav
+    /*
     jQuery(window).scroll(function () {
         var windowScrollPosTop = jQuery(window).scrollTop();
 
@@ -104,11 +105,11 @@ jQuery(document).ready(function () {
             jQuery(".top-header img.logo").css({
                 "margin-top": "-15px",
                 "margin-bottom": "0" ,
-                "max-width":"70%",
+                "max-width":"80%",
                 //"position":"relative",
             });
             jQuery(".navbar-default").css({
-                "margin-top": "-15px",
+                "margin-top": "-70px",
             });
         } else {
             jQuery(".header").css({
@@ -126,7 +127,7 @@ jQuery(document).ready(function () {
 
         }
     });
-
+*/
     // Modal js
     $('#insuranceModal').on('shown.bs.modal', function(){
       $('#insuranceModal').focus();

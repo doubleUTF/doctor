@@ -34,6 +34,7 @@ jspm_packages
 # Distribution folder
 dist
 dist.zip
+joomla_dist.zip
 
 # Optional npm cache directory
 .npm
