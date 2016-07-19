@@ -30,6 +30,12 @@ gulp.task('clean',function(){
   return del(['dist']);
 });
 
+// Delete usemin files
+
+gulp.task('del-usemin',function(){
+  return del(['dist/css/*','dist/js/*','dist/*.html'])
+})
+
 // Usemin task to minify js,css,html and add revision to files
 gulp.task('usemin', function(){
   return gulp.src('./*.html')
@@ -42,7 +48,7 @@ gulp.task('usemin', function(){
 });
 
 // Copy fonts
-gulp.task('copyfonts', ['clean'], function() {
+gulp.task('copyfonts', function() {
    return gulp.src('./fonts/**/*.{ttf,woff,eot,svg}*')
    .pipe(gulp.dest('./dist/fonts'));
 });
@@ -59,7 +65,7 @@ gulp.task('imagemin', function() {
 gulp.task('serve', ['browser-sync'], function(){
 
   // Watch js, css, and html files
-  gulp.watch(['js/*.js','css/*.css','*.html'],['usemin']);
+  gulp.watch(['./js/custom.js','./css/*.css','./index.html'],['del-usemin','usemin']);
 
   // Watch image files
   gulp.watch('./img/**/*',['imagemin']);
@@ -71,9 +77,10 @@ gulp.task('browser-sync',['default'], function(){
 
   browserSync.init({
     server:{
-      baseDir:"./"
+      baseDir:"./",
+      index: "index.html"
     }
   });
 
-    gulp.watch(['js/*.js','css/*.css','img/**','*.html']).on('change', browserSync.reload);
+    gulp.watch(['dist/**']).on('change', browserSync.reload);
   });
