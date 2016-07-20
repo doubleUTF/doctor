@@ -65,7 +65,7 @@ gulp.task('imagemin', function() {
 gulp.task('serve', ['browser-sync'], function(){
 
   // Watch js, css, and html files
-  gulp.watch(['./js/custom.js','./css/*.css','./index.html'],['del-usemin','usemin']);
+  //gulp.watch(['./js/custom.js','./css/*.css','./index.html'],['del-usemin','usemin']);
 
   // Watch image files
   gulp.watch('./img/**/*',['imagemin']);
